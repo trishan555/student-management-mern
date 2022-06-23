@@ -6,8 +6,6 @@ const app = express()
 require('dotenv').config()
 
 
-
-
 app.use(cors())
 app.use(bodyParser.json())
 
@@ -27,7 +25,7 @@ const studentRoutes = require('./routes/students.js')
 app.use('/student', studentRoutes)
 
 
-
+//port defining
 const PORT = process.env.PORT || 8070
 
 app.listen(PORT, () => {
